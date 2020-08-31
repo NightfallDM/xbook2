@@ -13,6 +13,9 @@
 // And put a "extern" in "src/kernel/debug.c" because just one func "printk" reference
 // the "debug_putchar" (i just find)
 
+// more butter put in this place :-)
+extern void (*debug_putchar)(char ch);
+
 void init_kernel_debug();
 void init_serial_debug();
 void serial_putchar(char ch);

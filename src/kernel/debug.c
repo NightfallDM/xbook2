@@ -7,7 +7,6 @@
 #include <arch/debug.h>
 #include <stdio.h>
 
-extern void(*debug_putchar)(char ch);
 
 char *printk_msg[] = {
     "emege: ",
